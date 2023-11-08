@@ -1,0 +1,174 @@
+@font-face {
+    font-family: 'Agbalumno'; 
+    src: url('Agbalumo/Agbalumo-Regular.ttf') format('truetype'); 
+}
+/*
+importando fuentes
+*/
+h1{
+    text-align: center;
+    padding-left: 30%;
+    padding-top: 5%;
+    font-size: 90px;
+    font-family: "Agbalumno";
+    color:linear-gradient(#abc6f7,#fba6c1);
+}
+/*
+Este es el diseño de h1
+*/
+h4{
+    text-align: center;
+    padding-left: 30%;
+    font-size: 20px;
+    margin-top: -4%;
+}
+/*
+Este es el diseño de h4
+*/
+main {
+    position:absolute;
+    
+    margin-top: -10px;
+    padding:0px;
+}
+/*
+Este es el diseño de main, osea laaprte completa de las tablas, la pantallita y la imagen del cuerpo
+*/
+input {
+    text-align: right;
+    background-color: rgb(24, 50, 24);
+    color: white;
+    width: 330px;
+    height: 50px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 40px;
+    font-family:'Playpen Sans', cursive ;
+}
+/*
+Este es el diseño de la pantallita
+*/
+.oreja{
+    
+    width:400px;
+    margin: 0px;
+    padding:0px;
+}
+/*
+Este es el tamaño y posicion de las orejas
+*/
+.cola{
+    margin-bottom: -455px;
+    margin-left: -3.7px;
+    height: 150px;
+    width: 150px;
+}
+/*
+Este es el tamaño y posicion de la cola
+*/
+table {
+    width: 400px;
+    height: 600px;
+    padding: 10px;
+    display: inline-block;
+    background-image: url(cuerpo.png);
+    background-size: 400px;
+    background-position-y: center;
+    background-position-x: center;
+    border-radius: 10px;
+    padding-top: 60px;
+    padding-left:30px;
+    
+}
+/*
+Este es el diseño de la tabla 
+*/
+
+.displaytable {
+    display: table;
+}
+/*
+le da un display especifico a la tabla que es table
+*/
+.displaytable-cell {
+    display: table-cell;
+}
+/*
+Su display muestra su contenido en celdas
+*/
+  
+.button {
+    
+    width: 65px;
+    height:65px;
+    font-size: 30px;
+    border-radius: 200px;
+    color: white;
+    font-family: 'Playpen Sans', cursive;
+    text-shadow: 4px 0px 0px rgb(255, 255, 255), 
+}
+/*
+Este es el diseño de todos los botones en general, el que tiene por default
+*/
+.pinkbutton {
+    border-color: #fba6c1;
+    background-color: #fba6c1;
+}
+/*
+Este es el diseño de los botones rosa
+*/
+.bluebutton {
+    border-color: #abc6f7;
+    background-color: #abc6f7;
+}
+/*
+Este es el diseño de los botones azul
+*/
+.yellowbutton {
+    border-color: #eee57f;
+    background-color: #eee57f;
+}
+/*
+Este es el diseño de los botones amarillo
+*/
+.operationstwo{
+    border-color: #eee57f;
+    background-color: #eee57f;
+    color: #cdc240;
+    font-size: 40px;
+}
+/*
+Este es el diseño de los botones de operacion amarillos
+*/
+.operationsfour{
+    border-color: #eee57f;
+    background-color: #eee57f;
+    color: #cdc240;
+    font-size: 35px;
+}
+/*
+Este es el diseño de los boton de borrar todo
+*/
+.operationsthree{
+    border-color: #abc6f7;
+    background-color: #abc6f7;
+    color: #4b75c4;
+    font-size: 40px;
+    text-align: center;
+    padding-bottom:40px;
+}
+/*
+Este es el diseño de borrar u caracter
+
+*/
+.operations{
+
+    border-color: #abc6f7;
+    background-color: #abc6f7;
+    color: #4b75c4;
+    
+    font-size: 40px;
+}
+/*
+Este es el diseño de los botones de operacion azules
+*/

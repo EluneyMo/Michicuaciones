@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--   Agregando head con sus respectivos links de js, css y fuentes de letra-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="michicuaciones.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Agbalumo/Agbalumo-Regular.ttf">
+    <script src="michicuaciones.js"></script>
+    <title>Michicalculadora</title>
+</head>
+<body>
+<div class="fondo">
+    <img src="oreja.png" alt="" class="oreja" />
+    
+<!--   Agregando orejitas-->
+    <main>
+        <table>
+            
+<!--   Agregando tabla con 6 columnas horizontales y 4 verticales-->
+            <tr>
+                <th colspan="4">
+                    
+<!--   Agregando la pantallita-->
+                    <input id="displayBox" type="text" readonly>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <!--   Agregando boton de calculo de porcentaje-->
+                    <div class="displaytable-cell" id="bPercentage">
+                        <button class="button operationstwo" type="button" onclick="calculadora.percentage()">%</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="displaytable-cell" id="bRoot">
+                        <!--   Agregando boton de raiz cuadrada-->
+                        <button class="button operations" type="button" onclick="calculadora.squareRoot()">√</button>
+                    </div>
+                </td>
+                <td>
+                    
+<!--   Agregando boton para hacer limpieza completa de la pantalla con su respectiva funcion-->
+                    <div class="displaytable-cell" id="bClearDisplayCE">
+                        <button class="button operationsfour" type="button" onclick="calculadora.clearDisplay()">CE</button>
+                    </div>
+                </td>
+                <td>
+                    
+<!--   Agregando boton para hacer limpieza caracter por caracter-->
+                    <div class="displaytable-cell" id="bClearDisplayC">
+                        <button class="button operationsthree" type="button" onclick="calculadora.eraseLastInput()">C</button>
+                    </div>
+                </td>
+          
+            </tr>
+            <tr>
+                <td>
+            
+<!--   Agregando boton numero 7-->
+                    <div class="displaytable-cell" id="bSeven">
+                        <button class="button pinkbutton" type="button" onclick="calculadora.writeToDisplay('7')">7</button>
+                    </div>
+                </td>
+                <td>
+                    <!--   Agregando boton numero 8-->
+                    <div class="displaytable-cell" id="bEight">
+                        <button class="button yellowbutton" type="button" onclick="calculadora.writeToDisplay('8')">8</button>
+                    </div>
+                </td>
+                <td>
+                    <!--   Agregando boton numero 9-->
+                    <div class="displaytable-cell" id="bNine">
+                        <button class="button bluebutton" type="button" onclick="calculadora.writeToDisplay('9')">9</button>
+                    </div>
+                </td>
+                <td>
+                                    
+                    <!--   Agregando boton de division-->
+                                        <div class="displaytable-cell" id="bDivide">
+                                            <button class="button operationstwo" type="button" onclick="calculadora.writeOperatorToDisplay('/')">÷</button>
+                                        </div>
+                                    </td>
+                    <td>
+             
+            
+            <tr>
+                <td>
+                    <!--   Agregando boton numero 4-->
+                    <div class="displaytable-cell" id="bFour">
+                        <button class="button bluebutton" type="button" onclick="calculadora.writeToDisplay('4')">4</button>
+                    </div>
+                </td>
+                <td>
+                    <!--   Agregando boton numero 5-->
+                    <div class="displaytable-cell" id="bFive">
+                        <button class="button pinkbutton" type="button" onclick="calculadora.writeToDisplay('5')">5</button>
+                    </div>
+                </td>
+                <td>
+                    <!--   Agregando boton numero 6-->
+                    <div class="displaytable-cell" id="bSix">
+                        <button class="button pinkbutton" type="button" onclick="calculadora.writeToDisplay('6')">6</button>
+                    </div>
+                </td>
+                <td>
+                    <!--   Agregando boton del calculo de multiplicacion-->
+                    <div class="displaytable-cell" id="bMultiply">
+                        <button class="button operations" type="button" onclick="calculadora.writeOperatorToDisplay('*')">X</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!--   Agregando boton numero 1-->
+                    <div class="displaytable-cell" id="bOne">
+                        <button class="button pinkbutton" type="button" onclick="calculadora.writeToDisplay('1')">1</button>
+                    </div>
+                </td>
+                <td>
+                    <!--   Agregando boton numero 2-->
+                    <div class="displaytable-cell" id="bTwo">
+                        <button class="button yellowbutton" type="button" onclick="calculadora.writeToDisplay('2')">2</button>
+                    </div>
+                </td>
+                <td>
+                    <!--   Agregando boton numero 3-->
+                    <div class="displaytable-cell" id="bThree">
+                        <button class="button bluebutton" type="button" onclick="calculadora.writeToDisplay('3')">3</button>
+                    </div>
+                </td>
+                <td>
+                    <!--   Agregando boton de suma-->
+                    <div class="displaytable-cell" id="bAdd">
+                        <button class="button operationstwo" type="button" onclick="calculadora.writeOperatorToDisplay('+')">+</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+              
+                <td>
+                    <!--   Agregando boton de ., osea numero decimal-->
+                    <div class="displaytable-cell" id="bDot">
+                        <button class="button bluebutton" type="button" onclick="calculadora.writeToDisplay('.')">.</button>
+                    </div>
+                </td>
+                <td>
+                    <!--   Agregando boton numero 0-->
+                    <div class="displaytable-cell" id="bZero">
+                        <button class="button yellowbutton" type="button" onclick="calculadora.writeToDisplay('0')">0</button>
+                    </div>
+                </td>
+    
+                <td>
+                    <!--   Agregando boton de igual, osea el que a apretar resuelve la operacion, con su respectiva funcion-->
+                    <div class="displaytable-cell" id="bEquals">
+                        <button class="button pinkbutton" type="button" onclick="calculadora.solveOperation()">=</button>
+                    </div>
+                </td>
+                <td>
+                    <!--   Agregando boton del calculo de resta-->
+                    <div class="displaytable-cell" id="bSubtract">
+                        <button class="button operations" type="button" onclick="calculadora.writeOperatorToDisplay('-')">-</button>
+                    </div>
+                </td>
+            </tr>
+           <tr>
+            <td>
+                <!--   Agregando boton de parentesis para cerrar-->
+                <div class="displaytable-cell" id="bRoot"> 
+                    <button class="button bluebutton" type="button" onclick="calculadora.writeToDisplay('(')">(</button>
+                </div>
+            </td>
+            <td>
+                    
+                <!--   Agregando boton de parentesis para mostrar cuando se lo apriete-->
+                                    <div class="displaytable-cell" id="bRoot">
+                                        <button class="button yellowbutton" type="button" onclick="calculadora.writeToDisplay(')')">)</button>
+                                    </div>
+                                </td>
+                <td>  
+                    <!--   Agregando boton de calculo de potencia -->
+                    <div class="displaytable-cell" id="bPower">
+                        <button class="button operations" type="button" onclick="calculadora.empowerment()">^</button>
+                    </div>
+                </td>
+        
+                <td>
+                    <!--   Agregando boton de calculo de radicacion-->
+                    <div class="displaytable-cell" id="bCubeRoot">
+                        <button class="button operationstwo" type="button" onclick="calculadora.cubeRoot()">∛</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </main>
+    <!--   Agregando imagen de la cola-->
+    <img src="cola.png" alt="" class="cola">
+    <h1>Michicalculadora</h1>
+    <h4>Para hacer tus michicuaciones sin problemas y con relajacion</h4>
+    
+    <!--   Agregando texto-->
+</div>
+</body>
+
+</html>
