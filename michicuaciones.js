@@ -36,8 +36,8 @@ var calculadora = {
                 .replace(/\^/g, '**')
                 .replace(/∛/g, 'Math.cbrt'); 
                 
-                const result = new Function('return ' + sanitizedInput)();
-                this.currentInput = result.toFixed(2).toString();
+                const result =  eval(sanitizedInput);
+                this.currentInput = result.toString();
             document.getElementById('displayBox').value = this.currentInput;
         } catch (error) {
             document.getElementById('displayBox').value = 'Error';
